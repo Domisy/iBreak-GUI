@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iBreak", "iBreak\Forms Test.vcxproj", "{CFE67CAA-D0C5-4E3F-B9A6-80908F20F1F7}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{85F26276-2D2F-485B-936E-0A057AA98197}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFE67CAA-D0C5-4E3F-B9A6-80908F20F1F7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CFE67CAA-D0C5-4E3F-B9A6-80908F20F1F7}.Debug|Win32.Build.0 = Debug|Win32
+		{CFE67CAA-D0C5-4E3F-B9A6-80908F20F1F7}.Release|Win32.ActiveCfg = Release|Win32
+		{CFE67CAA-D0C5-4E3F-B9A6-80908F20F1F7}.Release|Win32.Build.0 = Release|Win32
+		{85F26276-2D2F-485B-936E-0A057AA98197}.Debug|Win32.ActiveCfg = Debug
+		{85F26276-2D2F-485B-936E-0A057AA98197}.Release|Win32.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

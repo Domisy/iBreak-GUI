@@ -1,0 +1,6 @@
+Here is all of the source for the gui I am working on.
+Using Visual Studio 2010.
+
+2 important files are:
+-Form1.h
+-iBreak.cpp
