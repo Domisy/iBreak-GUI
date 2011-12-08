@@ -1,3 +1,11 @@
+/**
+	iBreak by Domisy
+	Code by Theo Mavrakis
+	Copyright 2011
+	DO NOT REPRODUCE
+**/
+
+
 #pragma once
 
 namespace FormsTest {
@@ -36,6 +44,7 @@ namespace FormsTest {
 		return 0;
 		}
 	
+
 	protected:
 		/// <summary>
 		/// Clean up any resources being used.
@@ -47,55 +56,62 @@ namespace FormsTest {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::SplitContainer^  splitContainer1;
-	private: System::Windows::Forms::Label^  label1;
-	private: System::Windows::Forms::ProgressBar^  progressBar;
-
-	private: System::Windows::Forms::ListView^  listView1;
-	private: System::Windows::Forms::Label^  stepLabel5;
-
-	private: System::Windows::Forms::Label^  stepLabel4;
-
-	private: System::Windows::Forms::Label^  stepLabel3;
-
-	private: System::Windows::Forms::Label^  stepLabel2;
-
-	private: System::Windows::Forms::Label^  stepLabel1;
-
-
+	private: System::Windows::Forms::Button^  backButton;
+	protected: 
 	public: System::Windows::Forms::Button^  nextButton;
 	private: 
-
-	private: System::Windows::Forms::Button^  backButton;
-
-
 	private: System::Windows::Forms::Button^  cancelButton;
-
-	private: Microsoft::VisualBasic::PowerPacks::ShapeContainer^  shapeContainer2;
-	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape1;
-
-
-	private: System::Windows::Forms::PictureBox^  check1;
-	private: System::Windows::Forms::PictureBox^  check2;
-	private: System::Windows::Forms::PictureBox^  check3;
-	private: System::Windows::Forms::PictureBox^  check4;
-	private: System::Windows::Forms::PictureBox^  check5;
-
-
+	public: 
+	private: System::Windows::Forms::Panel^  panelWelcome;
 	private: System::Windows::Forms::Panel^  panelStep1;
-
-
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Panel^  panel3;
+	private: System::Windows::Forms::GroupBox^  prompt3;
+	private: System::Windows::Forms::ComboBox^  unlockedDropdown;
+	private: System::Windows::Forms::GroupBox^  prompt2;
+	private: System::Windows::Forms::RadioButton^  radioButton4;
+	private: System::Windows::Forms::RadioButton^  prompt2choice2;
+	private: System::Windows::Forms::RadioButton^  prompt2choice1;
 	private: System::Windows::Forms::GroupBox^  prompt1;
-
 	private: System::Windows::Forms::RadioButton^  prompt1choice1;
 	private: System::Windows::Forms::RadioButton^  prompt1choice2;
 	private: System::Windows::Forms::RadioButton^  prompt1choice3;
-
-
-
 	private: System::Windows::Forms::Label^  label3;
+	private: System::Windows::Forms::Label^  welcomeLabel;
+	private: System::Windows::Forms::RichTextBox^  welcomeText;
+	private: System::Windows::Forms::Panel^  panelStep2;
+	private: System::Windows::Forms::Panel^  panelStep3;
+	private: System::Windows::Forms::ProgressBar^  findingJb;
+	private: System::Windows::Forms::Label^  label4;
+	private: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::Label^  panelStep3Title;
+	private: System::Windows::Forms::CheckBox^  understandingCheck;
+	private: System::Windows::Forms::GroupBox^  groupBox2;
+	private: System::Windows::Forms::TextBox^  unlockedText2;
+	private: System::Windows::Forms::TextBox^  unlockedText1;
+	private: System::Windows::Forms::GroupBox^  groupBox1;
+	private: System::Windows::Forms::TextBox^  tetheringText2;
+	private: System::Windows::Forms::TextBox^  tetheringText1;
+	private: System::Windows::Forms::Label^  step2Label;
+	private: System::Windows::Forms::ListView^  listView1;
+	private: System::Windows::Forms::ProgressBar^  progressBar;
+	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::Label^  stepLabel1;
+	private: System::Windows::Forms::Label^  stepLabel2;
+	private: System::Windows::Forms::Label^  stepLabel3;
+	private: System::Windows::Forms::Label^  stepLabel4;
+	private: System::Windows::Forms::Label^  stepLabel5;
+	private: System::Windows::Forms::PictureBox^  check1;
+	private: System::Windows::Forms::PictureBox^  check5;
+	private: System::Windows::Forms::PictureBox^  check4;
+	private: System::Windows::Forms::PictureBox^  check3;
+	private: System::Windows::Forms::PictureBox^  check2;
+	private: System::Windows::Forms::Label^  labelWelcome;
+	private: System::Windows::Forms::PictureBox^  pictureBox1;
+	private: System::Windows::Forms::SplitContainer^  splitContainer1;
+	private: Microsoft::VisualBasic::PowerPacks::ShapeContainer^  shapeContainer2;
+	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape1;
+	private: System::Windows::Forms::Label^  label5;
 
 
 
@@ -110,38 +126,91 @@ namespace FormsTest {
 
 
 
-private: System::Windows::Forms::PictureBox^  pictureBox1;
-private: System::Windows::Forms::Label^  labelWelcome;
-
-private: System::Windows::Forms::GroupBox^  prompt2;
-private: System::Windows::Forms::RadioButton^  prompt2choice2;
-
-
-private: System::Windows::Forms::RadioButton^  prompt2choice1;
-
-private: System::Windows::Forms::GroupBox^  prompt3;
-private: System::Windows::Forms::ComboBox^  unlockedDropdown;
-private: System::Windows::Forms::RadioButton^  radioButton4;
-private: System::Windows::Forms::Panel^  panelStep2;
-
-private: System::Windows::Forms::Label^  step2Label;
-private: System::Windows::Forms::GroupBox^  groupBox1;
-private: System::Windows::Forms::TextBox^  tetheringText1;
-private: System::Windows::Forms::GroupBox^  groupBox2;
-private: System::Windows::Forms::TextBox^  unlockedText1;
-private: System::Windows::Forms::TextBox^  unlockedText2;
-private: System::Windows::Forms::TextBox^  tetheringText2;
-private: System::Windows::Forms::CheckBox^  understandingCheck;
-private: System::Windows::Forms::Panel^  panelWelcome;
-private: System::Windows::Forms::RichTextBox^  welcomeText;
 
 
 
-private: System::Windows::Forms::Label^  welcomeLabel;
-private: System::Windows::Forms::Panel^  panelStep3;
-private: System::Windows::Forms::Button^  button1;
-private: System::Windows::Forms::Label^  comingSoon;
-private: System::Windows::Forms::Label^  panelStep3Title;
+	private: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+private: System::ComponentModel::IContainer^  components;
 
 
 
@@ -155,7 +224,7 @@ private: System::Windows::Forms::Label^  panelStep3Title;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -165,35 +234,9 @@ private: System::Windows::Forms::Label^  panelStep3Title;
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
-			this->splitContainer1 = (gcnew System::Windows::Forms::SplitContainer());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->labelWelcome = (gcnew System::Windows::Forms::Label());
-			this->check2 = (gcnew System::Windows::Forms::PictureBox());
-			this->check3 = (gcnew System::Windows::Forms::PictureBox());
-			this->check4 = (gcnew System::Windows::Forms::PictureBox());
-			this->check5 = (gcnew System::Windows::Forms::PictureBox());
-			this->check1 = (gcnew System::Windows::Forms::PictureBox());
-			this->stepLabel5 = (gcnew System::Windows::Forms::Label());
-			this->stepLabel4 = (gcnew System::Windows::Forms::Label());
-			this->stepLabel3 = (gcnew System::Windows::Forms::Label());
-			this->stepLabel2 = (gcnew System::Windows::Forms::Label());
-			this->stepLabel1 = (gcnew System::Windows::Forms::Label());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->progressBar = (gcnew System::Windows::Forms::ProgressBar());
-			this->listView1 = (gcnew System::Windows::Forms::ListView());
-			this->panelStep2 = (gcnew System::Windows::Forms::Panel());
-			this->panelStep3 = (gcnew System::Windows::Forms::Panel());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->comingSoon = (gcnew System::Windows::Forms::Label());
-			this->panelStep3Title = (gcnew System::Windows::Forms::Label());
-			this->understandingCheck = (gcnew System::Windows::Forms::CheckBox());
-			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
-			this->unlockedText2 = (gcnew System::Windows::Forms::TextBox());
-			this->unlockedText1 = (gcnew System::Windows::Forms::TextBox());
-			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->tetheringText2 = (gcnew System::Windows::Forms::TextBox());
-			this->tetheringText1 = (gcnew System::Windows::Forms::TextBox());
-			this->step2Label = (gcnew System::Windows::Forms::Label());
+			this->backButton = (gcnew System::Windows::Forms::Button());
+			this->nextButton = (gcnew System::Windows::Forms::Button());
+			this->cancelButton = (gcnew System::Windows::Forms::Button());
 			this->panelWelcome = (gcnew System::Windows::Forms::Panel());
 			this->panelStep1 = (gcnew System::Windows::Forms::Panel());
 			this->label2 = (gcnew System::Windows::Forms::Label());
@@ -211,387 +254,91 @@ private: System::Windows::Forms::Label^  panelStep3Title;
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->welcomeLabel = (gcnew System::Windows::Forms::Label());
 			this->welcomeText = (gcnew System::Windows::Forms::RichTextBox());
-			this->cancelButton = (gcnew System::Windows::Forms::Button());
-			this->nextButton = (gcnew System::Windows::Forms::Button());
-			this->backButton = (gcnew System::Windows::Forms::Button());
+			this->panelStep2 = (gcnew System::Windows::Forms::Panel());
+			this->panelStep3 = (gcnew System::Windows::Forms::Panel());
+			this->findingJb = (gcnew System::Windows::Forms::ProgressBar());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->panelStep3Title = (gcnew System::Windows::Forms::Label());
+			this->understandingCheck = (gcnew System::Windows::Forms::CheckBox());
+			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->unlockedText2 = (gcnew System::Windows::Forms::TextBox());
+			this->unlockedText1 = (gcnew System::Windows::Forms::TextBox());
+			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->tetheringText2 = (gcnew System::Windows::Forms::TextBox());
+			this->tetheringText1 = (gcnew System::Windows::Forms::TextBox());
+			this->step2Label = (gcnew System::Windows::Forms::Label());
+			this->listView1 = (gcnew System::Windows::Forms::ListView());
+			this->progressBar = (gcnew System::Windows::Forms::ProgressBar());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->stepLabel1 = (gcnew System::Windows::Forms::Label());
+			this->stepLabel2 = (gcnew System::Windows::Forms::Label());
+			this->stepLabel3 = (gcnew System::Windows::Forms::Label());
+			this->stepLabel4 = (gcnew System::Windows::Forms::Label());
+			this->stepLabel5 = (gcnew System::Windows::Forms::Label());
+			this->check1 = (gcnew System::Windows::Forms::PictureBox());
+			this->check5 = (gcnew System::Windows::Forms::PictureBox());
+			this->check4 = (gcnew System::Windows::Forms::PictureBox());
+			this->check3 = (gcnew System::Windows::Forms::PictureBox());
+			this->check2 = (gcnew System::Windows::Forms::PictureBox());
+			this->labelWelcome = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->splitContainer1 = (gcnew System::Windows::Forms::SplitContainer());
 			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape1 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->splitContainer1))->BeginInit();
-			this->splitContainer1->Panel1->SuspendLayout();
-			this->splitContainer1->Panel2->SuspendLayout();
-			this->splitContainer1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check2))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check3))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check4))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check5))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check1))->BeginInit();
-			this->panelStep2->SuspendLayout();
-			this->panelStep3->SuspendLayout();
-			this->groupBox2->SuspendLayout();
-			this->groupBox1->SuspendLayout();
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->panelWelcome->SuspendLayout();
 			this->panelStep1->SuspendLayout();
 			this->panel3->SuspendLayout();
 			this->prompt3->SuspendLayout();
 			this->prompt2->SuspendLayout();
 			this->prompt1->SuspendLayout();
+			this->panelStep2->SuspendLayout();
+			this->panelStep3->SuspendLayout();
+			this->groupBox2->SuspendLayout();
+			this->groupBox1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check4))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->splitContainer1))->BeginInit();
+			this->splitContainer1->Panel1->SuspendLayout();
+			this->splitContainer1->Panel2->SuspendLayout();
+			this->splitContainer1->SuspendLayout();
 			this->SuspendLayout();
 			// 
-			// splitContainer1
+			// backButton
 			// 
-			this->splitContainer1->IsSplitterFixed = true;
-			this->splitContainer1->Location = System::Drawing::Point(-1, 0);
-			this->splitContainer1->Name = L"splitContainer1";
+			this->backButton->Enabled = false;
+			this->backButton->Location = System::Drawing::Point(115, 333);
+			this->backButton->Name = L"backButton";
+			this->backButton->Size = System::Drawing::Size(60, 23);
+			this->backButton->TabIndex = 2;
+			this->backButton->Text = L"<-back";
+			this->backButton->UseVisualStyleBackColor = true;
+			this->backButton->Click += gcnew System::EventHandler(this, &Form1::button1_Click_1);
 			// 
-			// splitContainer1.Panel1
+			// nextButton
 			// 
-			this->splitContainer1->Panel1->Controls->Add(this->pictureBox1);
-			this->splitContainer1->Panel1->Controls->Add(this->labelWelcome);
-			this->splitContainer1->Panel1->Controls->Add(this->check2);
-			this->splitContainer1->Panel1->Controls->Add(this->check3);
-			this->splitContainer1->Panel1->Controls->Add(this->check4);
-			this->splitContainer1->Panel1->Controls->Add(this->check5);
-			this->splitContainer1->Panel1->Controls->Add(this->check1);
-			this->splitContainer1->Panel1->Controls->Add(this->stepLabel5);
-			this->splitContainer1->Panel1->Controls->Add(this->stepLabel4);
-			this->splitContainer1->Panel1->Controls->Add(this->stepLabel3);
-			this->splitContainer1->Panel1->Controls->Add(this->stepLabel2);
-			this->splitContainer1->Panel1->Controls->Add(this->stepLabel1);
-			this->splitContainer1->Panel1->Controls->Add(this->label1);
-			this->splitContainer1->Panel1->Controls->Add(this->progressBar);
-			this->splitContainer1->Panel1->Controls->Add(this->listView1);
+			this->nextButton->Location = System::Drawing::Point(181, 333);
+			this->nextButton->Name = L"nextButton";
+			this->nextButton->Size = System::Drawing::Size(60, 23);
+			this->nextButton->TabIndex = 3;
+			this->nextButton->Text = L"Next->";
+			this->nextButton->UseVisualStyleBackColor = true;
+			this->nextButton->Click += gcnew System::EventHandler(this, &Form1::button2_Click);
 			// 
-			// splitContainer1.Panel2
+			// cancelButton
 			// 
-			this->splitContainer1->Panel2->BackColor = System::Drawing::SystemColors::ControlLight;
-			this->splitContainer1->Panel2->Controls->Add(this->panelStep2);
-			this->splitContainer1->Panel2->Controls->Add(this->panelWelcome);
-			this->splitContainer1->Panel2->Controls->Add(this->cancelButton);
-			this->splitContainer1->Panel2->Controls->Add(this->nextButton);
-			this->splitContainer1->Panel2->Controls->Add(this->backButton);
-			this->splitContainer1->Panel2->Controls->Add(this->shapeContainer2);
-			this->splitContainer1->Panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Form1::splitContainer1_Panel2_Paint);
-			this->splitContainer1->Size = System::Drawing::Size(485, 359);
-			this->splitContainer1->SplitterDistance = 149;
-			this->splitContainer1->TabIndex = 3;
-			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->BackColor = System::Drawing::SystemColors::Control;
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(18, 61);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(20, 20);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->pictureBox1->TabIndex = 14;
-			this->pictureBox1->TabStop = false;
-			// 
-			// labelWelcome
-			// 
-			this->labelWelcome->AutoSize = true;
-			this->labelWelcome->BackColor = System::Drawing::SystemColors::Control;
-			this->labelWelcome->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->labelWelcome->Location = System::Drawing::Point(44, 65);
-			this->labelWelcome->Name = L"labelWelcome";
-			this->labelWelcome->Size = System::Drawing::Size(55, 13);
-			this->labelWelcome->TabIndex = 13;
-			this->labelWelcome->Text = L"Welcome!";
-			// 
-			// check2
-			// 
-			this->check2->BackColor = System::Drawing::SystemColors::Control;
-			this->check2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"check2.Image")));
-			this->check2->Location = System::Drawing::Point(18, 147);
-			this->check2->Name = L"check2";
-			this->check2->Size = System::Drawing::Size(20, 20);
-			this->check2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->check2->TabIndex = 12;
-			this->check2->TabStop = false;
-			this->check2->Visible = false;
-			// 
-			// check3
-			// 
-			this->check3->BackColor = System::Drawing::SystemColors::Control;
-			this->check3->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"check3.Image")));
-			this->check3->Location = System::Drawing::Point(18, 195);
-			this->check3->Name = L"check3";
-			this->check3->Size = System::Drawing::Size(20, 20);
-			this->check3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->check3->TabIndex = 11;
-			this->check3->TabStop = false;
-			this->check3->Visible = false;
-			// 
-			// check4
-			// 
-			this->check4->BackColor = System::Drawing::SystemColors::Control;
-			this->check4->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"check4.Image")));
-			this->check4->Location = System::Drawing::Point(18, 243);
-			this->check4->Name = L"check4";
-			this->check4->Size = System::Drawing::Size(20, 20);
-			this->check4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->check4->TabIndex = 10;
-			this->check4->TabStop = false;
-			this->check4->Visible = false;
-			// 
-			// check5
-			// 
-			this->check5->BackColor = System::Drawing::SystemColors::Control;
-			this->check5->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"check5.Image")));
-			this->check5->Location = System::Drawing::Point(18, 285);
-			this->check5->Name = L"check5";
-			this->check5->Size = System::Drawing::Size(20, 20);
-			this->check5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->check5->TabIndex = 9;
-			this->check5->TabStop = false;
-			this->check5->Visible = false;
-			// 
-			// check1
-			// 
-			this->check1->BackColor = System::Drawing::SystemColors::Control;
-			this->check1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"check1.Image")));
-			this->check1->Location = System::Drawing::Point(18, 102);
-			this->check1->Name = L"check1";
-			this->check1->Size = System::Drawing::Size(20, 20);
-			this->check1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->check1->TabIndex = 8;
-			this->check1->TabStop = false;
-			this->check1->Visible = false;
-			// 
-			// stepLabel5
-			// 
-			this->stepLabel5->AutoSize = true;
-			this->stepLabel5->BackColor = System::Drawing::SystemColors::Control;
-			this->stepLabel5->Location = System::Drawing::Point(44, 289);
-			this->stepLabel5->Name = L"stepLabel5";
-			this->stepLabel5->Size = System::Drawing::Size(34, 13);
-			this->stepLabel5->TabIndex = 7;
-			this->stepLabel5->Text = L"Finish";
-			// 
-			// stepLabel4
-			// 
-			this->stepLabel4->AutoSize = true;
-			this->stepLabel4->BackColor = System::Drawing::SystemColors::Control;
-			this->stepLabel4->Location = System::Drawing::Point(44, 247);
-			this->stepLabel4->Name = L"stepLabel4";
-			this->stepLabel4->Size = System::Drawing::Size(38, 13);
-			this->stepLabel4->TabIndex = 6;
-			this->stepLabel4->Text = L"Step 4";
-			// 
-			// stepLabel3
-			// 
-			this->stepLabel3->AutoSize = true;
-			this->stepLabel3->BackColor = System::Drawing::SystemColors::Control;
-			this->stepLabel3->Location = System::Drawing::Point(44, 198);
-			this->stepLabel3->Name = L"stepLabel3";
-			this->stepLabel3->Size = System::Drawing::Size(38, 13);
-			this->stepLabel3->TabIndex = 5;
-			this->stepLabel3->Text = L"Step 3";
-			// 
-			// stepLabel2
-			// 
-			this->stepLabel2->AutoSize = true;
-			this->stepLabel2->BackColor = System::Drawing::SystemColors::Control;
-			this->stepLabel2->Location = System::Drawing::Point(44, 151);
-			this->stepLabel2->Name = L"stepLabel2";
-			this->stepLabel2->Size = System::Drawing::Size(77, 13);
-			this->stepLabel2->TabIndex = 4;
-			this->stepLabel2->Text = L"Things to Note";
-			// 
-			// stepLabel1
-			// 
-			this->stepLabel1->AutoSize = true;
-			this->stepLabel1->BackColor = System::Drawing::SystemColors::Control;
-			this->stepLabel1->Location = System::Drawing::Point(44, 106);
-			this->stepLabel1->Name = L"stepLabel1";
-			this->stepLabel1->Size = System::Drawing::Size(41, 13);
-			this->stepLabel1->TabIndex = 3;
-			this->stepLabel1->Text = L"Device";
-			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(15, 15);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(55, 26);
-			this->label1->TabIndex = 1;
-			this->label1->Text = L"iBreak\nby Domisy";
-			// 
-			// progressBar
-			// 
-			this->progressBar->Location = System::Drawing::Point(12, 337);
-			this->progressBar->Name = L"progressBar";
-			this->progressBar->Size = System::Drawing::Size(126, 13);
-			this->progressBar->TabIndex = 0;
-			// 
-			// listView1
-			// 
-			this->listView1->Location = System::Drawing::Point(12, 55);
-			this->listView1->Name = L"listView1";
-			this->listView1->Size = System::Drawing::Size(126, 259);
-			this->listView1->TabIndex = 2;
-			this->listView1->UseCompatibleStateImageBehavior = false;
-			// 
-			// panelStep2
-			// 
-			this->panelStep2->Controls->Add(this->panelStep3);
-			this->panelStep2->Controls->Add(this->understandingCheck);
-			this->panelStep2->Controls->Add(this->groupBox2);
-			this->panelStep2->Controls->Add(this->groupBox1);
-			this->panelStep2->Controls->Add(this->step2Label);
-			this->panelStep2->Location = System::Drawing::Point(3, 3);
-			this->panelStep2->Name = L"panelStep2";
-			this->panelStep2->Size = System::Drawing::Size(326, 324);
-			this->panelStep2->TabIndex = 9;
-			this->panelStep2->Visible = false;
-			// 
-			// panelStep3
-			// 
-			this->panelStep3->BackColor = System::Drawing::SystemColors::Control;
-			this->panelStep3->Controls->Add(this->button1);
-			this->panelStep3->Controls->Add(this->comingSoon);
-			this->panelStep3->Controls->Add(this->panelStep3Title);
-			this->panelStep3->Location = System::Drawing::Point(0, 0);
-			this->panelStep3->Name = L"panelStep3";
-			this->panelStep3->Size = System::Drawing::Size(326, 324);
-			this->panelStep3->TabIndex = 4;
-			this->panelStep3->Visible = false;
-			// 
-			// button1
-			// 
-			this->button1->Location = System::Drawing::Point(65, 250);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(192, 38);
-			this->button1->TabIndex = 2;
-			this->button1->Text = L"Launch the Jailbreak!";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
-			// 
-			// comingSoon
-			// 
-			this->comingSoon->AutoSize = true;
-			this->comingSoon->Location = System::Drawing::Point(45, 116);
-			this->comingSoon->Name = L"comingSoon";
-			this->comingSoon->Size = System::Drawing::Size(77, 13);
-			this->comingSoon->TabIndex = 1;
-			this->comingSoon->Text = L"Coming soon...";
-			// 
-			// panelStep3Title
-			// 
-			this->panelStep3Title->AutoSize = true;
-			this->panelStep3Title->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->panelStep3Title->ForeColor = System::Drawing::SystemColors::HotTrack;
-			this->panelStep3Title->Location = System::Drawing::Point(20, 24);
-			this->panelStep3Title->Name = L"panelStep3Title";
-			this->panelStep3Title->Size = System::Drawing::Size(80, 18);
-			this->panelStep3Title->TabIndex = 0;
-			this->panelStep3Title->Text = L"Jailbreak!";
-			// 
-			// understandingCheck
-			// 
-			this->understandingCheck->AutoSize = true;
-			this->understandingCheck->Location = System::Drawing::Point(26, 291);
-			this->understandingCheck->Name = L"understandingCheck";
-			this->understandingCheck->Size = System::Drawing::Size(272, 17);
-			this->understandingCheck->TabIndex = 3;
-			this->understandingCheck->Text = L"I have been made aware and would like to proceed.";
-			this->understandingCheck->UseVisualStyleBackColor = true;
-			this->understandingCheck->CheckedChanged += gcnew System::EventHandler(this, &Form1::understandingCheck_CheckedChanged);
-			// 
-			// groupBox2
-			// 
-			this->groupBox2->Controls->Add(this->unlockedText2);
-			this->groupBox2->Controls->Add(this->unlockedText1);
-			this->groupBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->groupBox2->Location = System::Drawing::Point(11, 195);
-			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(299, 78);
-			this->groupBox2->TabIndex = 2;
-			this->groupBox2->TabStop = false;
-			this->groupBox2->Text = L"Unlocked Device";
-			// 
-			// unlockedText2
-			// 
-			this->unlockedText2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->unlockedText2->Location = System::Drawing::Point(5, 23);
-			this->unlockedText2->Multiline = true;
-			this->unlockedText2->Name = L"unlockedText2";
-			this->unlockedText2->ReadOnly = true;
-			this->unlockedText2->Size = System::Drawing::Size(290, 43);
-			this->unlockedText2->TabIndex = 3;
-			this->unlockedText2->Text = L"You do not need to worry about this, because \r\nyour device is not unlocked!";
-			// 
-			// unlockedText1
-			// 
-			this->unlockedText1->BorderStyle = System::Windows::Forms::BorderStyle::None;
-			this->unlockedText1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->unlockedText1->Location = System::Drawing::Point(6, 23);
-			this->unlockedText1->Multiline = true;
-			this->unlockedText1->Name = L"unlockedText1";
-			this->unlockedText1->ReadOnly = true;
-			this->unlockedText1->Size = System::Drawing::Size(287, 37);
-			this->unlockedText1->TabIndex = 0;
-			this->unlockedText1->Text = L"Because your device has been previously unlocked, \r\nproceeding with the jailbreak" 
-				L" will remove it.";
-			this->unlockedText1->Visible = false;
-			// 
-			// groupBox1
-			// 
-			this->groupBox1->Controls->Add(this->tetheringText2);
-			this->groupBox1->Controls->Add(this->tetheringText1);
-			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->groupBox1->Location = System::Drawing::Point(11, 63);
-			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(299, 106);
-			this->groupBox1->TabIndex = 1;
-			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"Tethering";
-			// 
-			// tetheringText2
-			// 
-			this->tetheringText2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->tetheringText2->Location = System::Drawing::Point(6, 22);
-			this->tetheringText2->Multiline = true;
-			this->tetheringText2->Name = L"tetheringText2";
-			this->tetheringText2->ReadOnly = true;
-			this->tetheringText2->Size = System::Drawing::Size(289, 79);
-			this->tetheringText2->TabIndex = 3;
-			this->tetheringText2->Text = L"Luckily for you, there is an untethered jailbreak available for your device.\r\nYou" 
-				L" will NOT need to connect your device to your computer to boot it.";
-			// 
-			// tetheringText1
-			// 
-			this->tetheringText1->BorderStyle = System::Windows::Forms::BorderStyle::None;
-			this->tetheringText1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->tetheringText1->Location = System::Drawing::Point(6, 20);
-			this->tetheringText1->Multiline = true;
-			this->tetheringText1->Name = L"tetheringText1";
-			this->tetheringText1->ReadOnly = true;
-			this->tetheringText1->Size = System::Drawing::Size(287, 83);
-			this->tetheringText1->TabIndex = 0;
-			this->tetheringText1->Text = resources->GetString(L"tetheringText1.Text");
-			this->tetheringText1->Visible = false;
-			this->tetheringText1->TextChanged += gcnew System::EventHandler(this, &Form1::textBox1_TextChanged);
-			// 
-			// step2Label
-			// 
-			this->step2Label->AutoSize = true;
-			this->step2Label->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->step2Label->ForeColor = System::Drawing::SystemColors::HotTrack;
-			this->step2Label->Location = System::Drawing::Point(14, 22);
-			this->step2Label->Name = L"step2Label";
-			this->step2Label->Size = System::Drawing::Size(214, 21);
-			this->step2Label->TabIndex = 0;
-			this->step2Label->Text = L"Things you need to know...";
+			this->cancelButton->Location = System::Drawing::Point(260, 333);
+			this->cancelButton->Name = L"cancelButton";
+			this->cancelButton->Size = System::Drawing::Size(60, 23);
+			this->cancelButton->TabIndex = 4;
+			this->cancelButton->Text = L"Cancel";
+			this->cancelButton->UseVisualStyleBackColor = true;
+			this->cancelButton->Click += gcnew System::EventHandler(this, &Form1::button3_Click);
 			// 
 			// panelWelcome
 			// 
@@ -791,36 +538,375 @@ private: System::Windows::Forms::Label^  panelStep3Title;
 			this->welcomeText->TabIndex = 4;
 			this->welcomeText->Text = resources->GetString(L"welcomeText.Text");
 			// 
-			// cancelButton
+			// panelStep2
 			// 
-			this->cancelButton->Location = System::Drawing::Point(260, 333);
-			this->cancelButton->Name = L"cancelButton";
-			this->cancelButton->Size = System::Drawing::Size(60, 23);
-			this->cancelButton->TabIndex = 4;
-			this->cancelButton->Text = L"Cancel";
-			this->cancelButton->UseVisualStyleBackColor = true;
-			this->cancelButton->Click += gcnew System::EventHandler(this, &Form1::button3_Click);
+			this->panelStep2->Controls->Add(this->panelStep3);
+			this->panelStep2->Controls->Add(this->understandingCheck);
+			this->panelStep2->Controls->Add(this->groupBox2);
+			this->panelStep2->Controls->Add(this->groupBox1);
+			this->panelStep2->Controls->Add(this->step2Label);
+			this->panelStep2->Location = System::Drawing::Point(3, 3);
+			this->panelStep2->Name = L"panelStep2";
+			this->panelStep2->Size = System::Drawing::Size(326, 324);
+			this->panelStep2->TabIndex = 9;
+			this->panelStep2->Visible = false;
 			// 
-			// nextButton
+			// panelStep3
 			// 
-			this->nextButton->Location = System::Drawing::Point(181, 333);
-			this->nextButton->Name = L"nextButton";
-			this->nextButton->Size = System::Drawing::Size(60, 23);
-			this->nextButton->TabIndex = 3;
-			this->nextButton->Text = L"Next->";
-			this->nextButton->UseVisualStyleBackColor = true;
-			this->nextButton->Click += gcnew System::EventHandler(this, &Form1::button2_Click);
+			this->panelStep3->BackColor = System::Drawing::SystemColors::Control;
+			this->panelStep3->Controls->Add(this->label5);
+			this->panelStep3->Controls->Add(this->findingJb);
+			this->panelStep3->Controls->Add(this->label4);
+			this->panelStep3->Controls->Add(this->button1);
+			this->panelStep3->Controls->Add(this->panelStep3Title);
+			this->panelStep3->Location = System::Drawing::Point(0, 0);
+			this->panelStep3->Name = L"panelStep3";
+			this->panelStep3->Size = System::Drawing::Size(326, 324);
+			this->panelStep3->TabIndex = 4;
+			this->panelStep3->Visible = false;
 			// 
-			// backButton
+			// findingJb
 			// 
-			this->backButton->Enabled = false;
-			this->backButton->Location = System::Drawing::Point(115, 333);
-			this->backButton->Name = L"backButton";
-			this->backButton->Size = System::Drawing::Size(60, 23);
-			this->backButton->TabIndex = 2;
-			this->backButton->Text = L"<-back";
-			this->backButton->UseVisualStyleBackColor = true;
-			this->backButton->Click += gcnew System::EventHandler(this, &Form1::button1_Click_1);
+			this->findingJb->BackColor = System::Drawing::SystemColors::Control;
+			this->findingJb->Location = System::Drawing::Point(65, 250);
+			this->findingJb->MarqueeAnimationSpeed = 10;
+			this->findingJb->Name = L"findingJb";
+			this->findingJb->Size = System::Drawing::Size(192, 38);
+			this->findingJb->Style = System::Windows::Forms::ProgressBarStyle::Marquee;
+			this->findingJb->TabIndex = 4;
+			this->findingJb->UseWaitCursor = true;
+			// 
+			// label4
+			// 
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->label4->Location = System::Drawing::Point(19, 74);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(285, 95);
+			this->label4->TabIndex = 3;
+			this->label4->Text = L"iBreak is now determining the correct jailbreak tool for your specified device.\r\n" 
+				L"It will then extract it to your desktop.\r\n\r\nPlease wait a moment...";
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(65, 250);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(192, 38);
+			this->button1->TabIndex = 2;
+			this->button1->Text = L"Launch the Jailbreak!";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
+			// 
+			// panelStep3Title
+			// 
+			this->panelStep3Title->AutoSize = true;
+			this->panelStep3Title->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->panelStep3Title->ForeColor = System::Drawing::SystemColors::HotTrack;
+			this->panelStep3Title->Location = System::Drawing::Point(20, 24);
+			this->panelStep3Title->Name = L"panelStep3Title";
+			this->panelStep3Title->Size = System::Drawing::Size(80, 18);
+			this->panelStep3Title->TabIndex = 0;
+			this->panelStep3Title->Text = L"Jailbreak!";
+			// 
+			// understandingCheck
+			// 
+			this->understandingCheck->AutoSize = true;
+			this->understandingCheck->Location = System::Drawing::Point(26, 291);
+			this->understandingCheck->Name = L"understandingCheck";
+			this->understandingCheck->Size = System::Drawing::Size(272, 17);
+			this->understandingCheck->TabIndex = 3;
+			this->understandingCheck->Text = L"I have been made aware and would like to proceed.";
+			this->understandingCheck->UseVisualStyleBackColor = true;
+			this->understandingCheck->CheckedChanged += gcnew System::EventHandler(this, &Form1::understandingCheck_CheckedChanged);
+			// 
+			// groupBox2
+			// 
+			this->groupBox2->Controls->Add(this->unlockedText2);
+			this->groupBox2->Controls->Add(this->unlockedText1);
+			this->groupBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->groupBox2->Location = System::Drawing::Point(11, 195);
+			this->groupBox2->Name = L"groupBox2";
+			this->groupBox2->Size = System::Drawing::Size(299, 78);
+			this->groupBox2->TabIndex = 2;
+			this->groupBox2->TabStop = false;
+			this->groupBox2->Text = L"Unlocked Device";
+			// 
+			// unlockedText2
+			// 
+			this->unlockedText2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->unlockedText2->Location = System::Drawing::Point(5, 23);
+			this->unlockedText2->Multiline = true;
+			this->unlockedText2->Name = L"unlockedText2";
+			this->unlockedText2->ReadOnly = true;
+			this->unlockedText2->Size = System::Drawing::Size(290, 43);
+			this->unlockedText2->TabIndex = 3;
+			this->unlockedText2->Text = L"You do not need to worry about this, because \r\nyour device is not unlocked!";
+			// 
+			// unlockedText1
+			// 
+			this->unlockedText1->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->unlockedText1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->unlockedText1->Location = System::Drawing::Point(6, 23);
+			this->unlockedText1->Multiline = true;
+			this->unlockedText1->Name = L"unlockedText1";
+			this->unlockedText1->ReadOnly = true;
+			this->unlockedText1->Size = System::Drawing::Size(287, 37);
+			this->unlockedText1->TabIndex = 0;
+			this->unlockedText1->Text = L"Because your device has been previously unlocked, \r\nproceeding with the jailbreak" 
+				L" will remove it.";
+			this->unlockedText1->Visible = false;
+			// 
+			// groupBox1
+			// 
+			this->groupBox1->Controls->Add(this->tetheringText2);
+			this->groupBox1->Controls->Add(this->tetheringText1);
+			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->groupBox1->Location = System::Drawing::Point(11, 63);
+			this->groupBox1->Name = L"groupBox1";
+			this->groupBox1->Size = System::Drawing::Size(299, 106);
+			this->groupBox1->TabIndex = 1;
+			this->groupBox1->TabStop = false;
+			this->groupBox1->Text = L"Tethering";
+			// 
+			// tetheringText2
+			// 
+			this->tetheringText2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->tetheringText2->Location = System::Drawing::Point(6, 22);
+			this->tetheringText2->Multiline = true;
+			this->tetheringText2->Name = L"tetheringText2";
+			this->tetheringText2->ReadOnly = true;
+			this->tetheringText2->Size = System::Drawing::Size(289, 79);
+			this->tetheringText2->TabIndex = 3;
+			this->tetheringText2->Text = L"Luckily for you, there is an untethered jailbreak available for your device.\r\nYou" 
+				L" will NOT need to connect your device to your computer to boot it.";
+			// 
+			// tetheringText1
+			// 
+			this->tetheringText1->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->tetheringText1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->tetheringText1->Location = System::Drawing::Point(6, 20);
+			this->tetheringText1->Multiline = true;
+			this->tetheringText1->Name = L"tetheringText1";
+			this->tetheringText1->ReadOnly = true;
+			this->tetheringText1->Size = System::Drawing::Size(287, 83);
+			this->tetheringText1->TabIndex = 0;
+			this->tetheringText1->Text = resources->GetString(L"tetheringText1.Text");
+			this->tetheringText1->Visible = false;
+			this->tetheringText1->TextChanged += gcnew System::EventHandler(this, &Form1::textBox1_TextChanged);
+			// 
+			// step2Label
+			// 
+			this->step2Label->AutoSize = true;
+			this->step2Label->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->step2Label->ForeColor = System::Drawing::SystemColors::HotTrack;
+			this->step2Label->Location = System::Drawing::Point(14, 22);
+			this->step2Label->Name = L"step2Label";
+			this->step2Label->Size = System::Drawing::Size(214, 21);
+			this->step2Label->TabIndex = 0;
+			this->step2Label->Text = L"Things you need to know...";
+			// 
+			// listView1
+			// 
+			this->listView1->Location = System::Drawing::Point(12, 55);
+			this->listView1->Name = L"listView1";
+			this->listView1->Size = System::Drawing::Size(126, 259);
+			this->listView1->TabIndex = 2;
+			this->listView1->UseCompatibleStateImageBehavior = false;
+			// 
+			// progressBar
+			// 
+			this->progressBar->Location = System::Drawing::Point(12, 337);
+			this->progressBar->Name = L"progressBar";
+			this->progressBar->Size = System::Drawing::Size(126, 13);
+			this->progressBar->TabIndex = 0;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(15, 15);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(55, 26);
+			this->label1->TabIndex = 1;
+			this->label1->Text = L"iBreak\nby Domisy";
+			// 
+			// stepLabel1
+			// 
+			this->stepLabel1->AutoSize = true;
+			this->stepLabel1->BackColor = System::Drawing::SystemColors::Control;
+			this->stepLabel1->Location = System::Drawing::Point(44, 106);
+			this->stepLabel1->Name = L"stepLabel1";
+			this->stepLabel1->Size = System::Drawing::Size(41, 13);
+			this->stepLabel1->TabIndex = 3;
+			this->stepLabel1->Text = L"Device";
+			// 
+			// stepLabel2
+			// 
+			this->stepLabel2->AutoSize = true;
+			this->stepLabel2->BackColor = System::Drawing::SystemColors::Control;
+			this->stepLabel2->Location = System::Drawing::Point(44, 151);
+			this->stepLabel2->Name = L"stepLabel2";
+			this->stepLabel2->Size = System::Drawing::Size(77, 13);
+			this->stepLabel2->TabIndex = 4;
+			this->stepLabel2->Text = L"Things to Note";
+			// 
+			// stepLabel3
+			// 
+			this->stepLabel3->AutoSize = true;
+			this->stepLabel3->BackColor = System::Drawing::SystemColors::Control;
+			this->stepLabel3->Location = System::Drawing::Point(44, 198);
+			this->stepLabel3->Name = L"stepLabel3";
+			this->stepLabel3->Size = System::Drawing::Size(49, 13);
+			this->stepLabel3->TabIndex = 5;
+			this->stepLabel3->Text = L"Jailbreak";
+			// 
+			// stepLabel4
+			// 
+			this->stepLabel4->AutoSize = true;
+			this->stepLabel4->BackColor = System::Drawing::SystemColors::Control;
+			this->stepLabel4->Location = System::Drawing::Point(44, 247);
+			this->stepLabel4->Name = L"stepLabel4";
+			this->stepLabel4->Size = System::Drawing::Size(68, 13);
+			this->stepLabel4->TabIndex = 6;
+			this->stepLabel4->Text = L"Walkthrough";
+			// 
+			// stepLabel5
+			// 
+			this->stepLabel5->AutoSize = true;
+			this->stepLabel5->BackColor = System::Drawing::SystemColors::Control;
+			this->stepLabel5->Location = System::Drawing::Point(44, 289);
+			this->stepLabel5->Name = L"stepLabel5";
+			this->stepLabel5->Size = System::Drawing::Size(34, 13);
+			this->stepLabel5->TabIndex = 7;
+			this->stepLabel5->Text = L"Finish";
+			// 
+			// check1
+			// 
+			this->check1->BackColor = System::Drawing::SystemColors::Control;
+			this->check1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"check1.Image")));
+			this->check1->Location = System::Drawing::Point(18, 102);
+			this->check1->Name = L"check1";
+			this->check1->Size = System::Drawing::Size(20, 20);
+			this->check1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->check1->TabIndex = 8;
+			this->check1->TabStop = false;
+			this->check1->Visible = false;
+			// 
+			// check5
+			// 
+			this->check5->BackColor = System::Drawing::SystemColors::Control;
+			this->check5->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"check5.Image")));
+			this->check5->Location = System::Drawing::Point(18, 285);
+			this->check5->Name = L"check5";
+			this->check5->Size = System::Drawing::Size(20, 20);
+			this->check5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->check5->TabIndex = 9;
+			this->check5->TabStop = false;
+			this->check5->Visible = false;
+			// 
+			// check4
+			// 
+			this->check4->BackColor = System::Drawing::SystemColors::Control;
+			this->check4->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"check4.Image")));
+			this->check4->Location = System::Drawing::Point(18, 243);
+			this->check4->Name = L"check4";
+			this->check4->Size = System::Drawing::Size(20, 20);
+			this->check4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->check4->TabIndex = 10;
+			this->check4->TabStop = false;
+			this->check4->Visible = false;
+			// 
+			// check3
+			// 
+			this->check3->BackColor = System::Drawing::SystemColors::Control;
+			this->check3->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"check3.Image")));
+			this->check3->Location = System::Drawing::Point(18, 195);
+			this->check3->Name = L"check3";
+			this->check3->Size = System::Drawing::Size(20, 20);
+			this->check3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->check3->TabIndex = 11;
+			this->check3->TabStop = false;
+			this->check3->Visible = false;
+			// 
+			// check2
+			// 
+			this->check2->BackColor = System::Drawing::SystemColors::Control;
+			this->check2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"check2.Image")));
+			this->check2->Location = System::Drawing::Point(18, 147);
+			this->check2->Name = L"check2";
+			this->check2->Size = System::Drawing::Size(20, 20);
+			this->check2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->check2->TabIndex = 12;
+			this->check2->TabStop = false;
+			this->check2->Visible = false;
+			// 
+			// labelWelcome
+			// 
+			this->labelWelcome->AutoSize = true;
+			this->labelWelcome->BackColor = System::Drawing::SystemColors::Control;
+			this->labelWelcome->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->labelWelcome->Location = System::Drawing::Point(44, 65);
+			this->labelWelcome->Name = L"labelWelcome";
+			this->labelWelcome->Size = System::Drawing::Size(55, 13);
+			this->labelWelcome->TabIndex = 13;
+			this->labelWelcome->Text = L"Welcome!";
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackColor = System::Drawing::SystemColors::Control;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(18, 61);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(20, 20);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox1->TabIndex = 14;
+			this->pictureBox1->TabStop = false;
+			// 
+			// splitContainer1
+			// 
+			this->splitContainer1->IsSplitterFixed = true;
+			this->splitContainer1->Location = System::Drawing::Point(-1, 0);
+			this->splitContainer1->Name = L"splitContainer1";
+			// 
+			// splitContainer1.Panel1
+			// 
+			this->splitContainer1->Panel1->Controls->Add(this->pictureBox1);
+			this->splitContainer1->Panel1->Controls->Add(this->labelWelcome);
+			this->splitContainer1->Panel1->Controls->Add(this->check2);
+			this->splitContainer1->Panel1->Controls->Add(this->check3);
+			this->splitContainer1->Panel1->Controls->Add(this->check4);
+			this->splitContainer1->Panel1->Controls->Add(this->check5);
+			this->splitContainer1->Panel1->Controls->Add(this->check1);
+			this->splitContainer1->Panel1->Controls->Add(this->stepLabel5);
+			this->splitContainer1->Panel1->Controls->Add(this->stepLabel4);
+			this->splitContainer1->Panel1->Controls->Add(this->stepLabel3);
+			this->splitContainer1->Panel1->Controls->Add(this->stepLabel2);
+			this->splitContainer1->Panel1->Controls->Add(this->stepLabel1);
+			this->splitContainer1->Panel1->Controls->Add(this->label1);
+			this->splitContainer1->Panel1->Controls->Add(this->progressBar);
+			this->splitContainer1->Panel1->Controls->Add(this->listView1);
+			// 
+			// splitContainer1.Panel2
+			// 
+			this->splitContainer1->Panel2->BackColor = System::Drawing::SystemColors::ControlLight;
+			this->splitContainer1->Panel2->Controls->Add(this->panelStep2);
+			this->splitContainer1->Panel2->Controls->Add(this->panelWelcome);
+			this->splitContainer1->Panel2->Controls->Add(this->cancelButton);
+			this->splitContainer1->Panel2->Controls->Add(this->nextButton);
+			this->splitContainer1->Panel2->Controls->Add(this->backButton);
+			this->splitContainer1->Panel2->Controls->Add(this->shapeContainer2);
+			this->splitContainer1->Panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Form1::splitContainer1_Panel2_Paint);
+			this->splitContainer1->Size = System::Drawing::Size(485, 359);
+			this->splitContainer1->SplitterDistance = 149;
+			this->splitContainer1->TabIndex = 3;
 			// 
 			// shapeContainer2
 			// 
@@ -840,6 +926,15 @@ private: System::Windows::Forms::Label^  panelStep3Title;
 			this->lineShape1->Y1 = 313;
 			this->lineShape1->Y2 = 1;
 			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(86, 298);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(152, 13);
+			this->label5->TabIndex = 5;
+			this->label5->Text = L"(this is where it ends for now...)";
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -851,25 +946,6 @@ private: System::Windows::Forms::Label^  panelStep3Title;
 			this->MaximizeBox = false;
 			this->Name = L"Form1";
 			this->Text = L"iBreak";
-			this->splitContainer1->Panel1->ResumeLayout(false);
-			this->splitContainer1->Panel1->PerformLayout();
-			this->splitContainer1->Panel2->ResumeLayout(false);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->splitContainer1))->EndInit();
-			this->splitContainer1->ResumeLayout(false);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check2))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check3))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check4))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check5))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check1))->EndInit();
-			this->panelStep2->ResumeLayout(false);
-			this->panelStep2->PerformLayout();
-			this->panelStep3->ResumeLayout(false);
-			this->panelStep3->PerformLayout();
-			this->groupBox2->ResumeLayout(false);
-			this->groupBox2->PerformLayout();
-			this->groupBox1->ResumeLayout(false);
-			this->groupBox1->PerformLayout();
 			this->panelWelcome->ResumeLayout(false);
 			this->panelWelcome->PerformLayout();
 			this->panelStep1->ResumeLayout(false);
@@ -881,6 +957,25 @@ private: System::Windows::Forms::Label^  panelStep3Title;
 			this->prompt2->PerformLayout();
 			this->prompt1->ResumeLayout(false);
 			this->prompt1->PerformLayout();
+			this->panelStep2->ResumeLayout(false);
+			this->panelStep2->PerformLayout();
+			this->panelStep3->ResumeLayout(false);
+			this->panelStep3->PerformLayout();
+			this->groupBox2->ResumeLayout(false);
+			this->groupBox2->PerformLayout();
+			this->groupBox1->ResumeLayout(false);
+			this->groupBox1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check4))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->check2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->EndInit();
+			this->splitContainer1->Panel1->ResumeLayout(false);
+			this->splitContainer1->Panel1->PerformLayout();
+			this->splitContainer1->Panel2->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->splitContainer1))->EndInit();
+			this->splitContainer1->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
@@ -903,7 +998,7 @@ private: System::Windows::Forms::Label^  panelStep3Title;
 				 //advancing the panels
 				 if (check1->Visible == false) { check1->Visible = true; panelStep1->Visible = true; }
 					else if (check2->Visible == false) { check2->Visible = true; panelStep2->Visible = true; }
-					else if (check3->Visible == false) { check3->Visible = true; /*panelStep3->Visible = true; */}
+					else if (check3->Visible == false) { check3->Visible = true; panelStep3->Visible = true;}
 					else if (check4->Visible == false) { check4->Visible = true; /*panelStep4->Visible = true; */}
 					else if (check5->Visible == false) { check5->Visible = true; cancelButton->Text = "Finish";}
 			 	}	 
@@ -964,6 +1059,8 @@ private: System::Void splitContainer1_Panel2_Paint(System::Object^  sender, Syst
 		 }
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 			 nextActivateFunc(true);
+		 }
+private: System::Void timer1_Tick(System::Object^  sender, System::EventArgs^  e) {
 		 }
 };
 }

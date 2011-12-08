@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:Setup"
+"ProjectName" = "8:iBreak Setup"
 "LanguageId" = "3:1033"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1033"
@@ -27,7 +27,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_DB329DCCD09940AA9982E8B1C8DED899"
+        "MsmKey" = "8:_9DB9F27663134BF6813B19A0933865C2"
+        "OwnerKey" = "8:_8CF091BFDC854403BC1857CB8D664926"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_8CF091BFDC854403BC1857CB8D664926"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -35,12 +41,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_42874632E456425AB484778A83F1DD40"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8CF091BFDC854403BC1857CB8D664926"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -61,6 +61,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -77,6 +85,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -97,7 +113,7 @@
                 "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_26B586EC3EFB433E8923792823AC6B88"
                 {
                 "Name" = "8:.NET Framework"
-                "Message" = "8:The setup could not detect an installation of the .NET Framework, which iBreak requires to run. The .NET Framework can be obtained from the Web. Would you like to do this now?"
+                "Message" = "8:The setup could not detect an installation of the .NET Framework, which iBreak requires to run. The .NET Framework can be obtained from the Web. Would you like to do this now? After installing the .NET Framework you may need to rerun this installer."
                 "FrameworkVersion" = "8:.NETFramework,Version=v4.0,Profile=Client"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://msdn.microsoft.com/en-us/netframework/aa569263"
@@ -192,24 +208,24 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Setup"
-        "ProductCode" = "8:{72D2DEB9-4998-413F-9AEB-ECE49089EC69}"
-        "PackageCode" = "8:{DA0FB732-13AA-4147-BE38-C6D24DD9E08D}"
+        "ProductName" = "8:iBreak"
+        "ProductCode" = "8:{89F86E53-F8F0-42FD-A36B-3DA22C35E17F}"
+        "PackageCode" = "8:{E2F52931-B09C-444B-917F-C177FFE70110}"
         "UpgradeCode" = "8:{B6959A15-E30F-4A9E-ABDA-85A5671AB911}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Default Company Name"
+        "ProductVersion" = "8:0.0.5"
+        "Manufacturer" = "8:Domisy"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Setup"
+        "Title" = "8:iBreak"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Default Company Name"
+        "ARPCONTACT" = "8:Domisy Dev"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:"
+        "ARPCOMMENTS" = "8:A jailbreak toolkit for iOS devices."
         "ARPURLINFOABOUT" = "8:"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
@@ -416,7 +432,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:The setup application will ensure that you have the proper files needed to run iBreak, before placing it on your desktop."
+                            "Value" = "8:Thank you for downloading iBreak by Domisy. This setup application will ensure that you have the proper files needed to run iBreak, before placing it on your desktop. This is NOT an installer."
                             "DefaultValue" = "8:#1203"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -517,7 +533,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:The setup application will ensure that you have the proper files needed to run iBreak, before placing it on your desktop."
+                            "Value" = "8:Thank you for downloading iBreak by Domisy. This setup application will ensure that you have the proper files needed to run iBreak, before placing it on your desktop. This is NOT an installer."
                             "DefaultValue" = "8:#1203"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -609,7 +625,7 @@
         }
         "MergeModule"
         {
-            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_DB329DCCD09940AA9982E8B1C8DED899"
+            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_9DB9F27663134BF6813B19A0933865C2"
             {
             "UseDynamicProperties" = "11:TRUE"
             "IsDependency" = "11:TRUE"

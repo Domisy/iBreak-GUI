@@ -1,10 +1,33 @@
-﻿     0>C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj : error MSB4014: The build stopped unexpectedly because of an internal failure.
-C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj : error MSB4014: Microsoft.Build.Exceptions.BuildAbortedException: Build was canceled. MSBuild.exe could not be launched as a child node as it could not be found at the location "". If necessary, specify the correct location in the BuildParameters, or with the MSBUILD_EXE_PATH environment variable.
-C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj : error MSB4014:    at Microsoft.Build.BackEnd.NodeProviderOutOfProc.LaunchNode()
-C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj : error MSB4014:    at Microsoft.Build.BackEnd.NodeProviderOutOfProc.GetNode(Int32 nodeId, INodePacketFactory factory)
-C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj : error MSB4014:    at Microsoft.Build.BackEnd.NodeProviderOutOfProc.CreateNode(Int32 nodeId, INodePacketFactory factory, NodeConfiguration configuration)
-C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj : error MSB4014:    at Microsoft.Build.BackEnd.NodeManager.AttemptCreateNode(INodeProvider nodeProvider, NodeConfiguration nodeConfiguration)
-C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj : error MSB4014:    at Microsoft.Build.BackEnd.NodeManager.CreateNode(NodeConfiguration configuration, NodeAffinity nodeAffinity)
-C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj : error MSB4014:    at Microsoft.Build.Execution.BuildManager.PerformSchedulingActions(IEnumerable`1 responses)
-C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj : error MSB4014:    at Microsoft.Build.Execution.BuildManager.HandleNewRequest(Int32 node, BuildRequestBlocker blocker)
-C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj : error MSB4014:    at Microsoft.Build.Execution.BuildManager.IssueRequestToScheduler(BuildSubmission submission, Boolean allowMainThreadBuild, BuildRequestBlocker blocker)
+﻿Build started 12/7/2011 9:43:05 PM.
+     1>Project "C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\iBreak.unsuccessfulbuild".
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\iBreak.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.VisualBasic.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.VisualBasic.PowerPacks.Vs.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt iBreak.cpp /clr:nostdlib 
+         iBreak.cpp
+         All outputs are up-to-date.
+       CoreResGen:
+         "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.VisualBasic.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.VisualBasic.PowerPacks.Vs.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile Form1.resX,Release\FormsTest.Form1.resources
+         Processing resource file "Form1.resX" into "Release\FormsTest.Form1.resources".
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\app.res" app.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\Release\iBreak.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\FormsTest.Form1.resources /MANIFEST /ManifestFile:"Release\iBreak.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\Release\iBreak.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
+         Release\AssemblyInfo.obj
+         Release\iBreak.obj
+         Release\stdafx.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         Forms Test.vcxproj -> C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\Release\iBreak.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\Release\iBreak.exe;#1" /manifest Release\iBreak.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\iBreak.unsuccessfulbuild".
+         Touching "Release\iBreak.lastbuildstate".
+     1>Done Building Project "C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.96
