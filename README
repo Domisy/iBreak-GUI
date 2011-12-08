@@ -1,0 +1,9 @@
+THIS IS THE GUI FOR IBREAK.
+
+Important files:
+-Form1.h
+-iBreak.cpp
+both located under /iBreak folder above.
+
+
+Setup files for iBreak are located under the /Setup/Release directory above. Download both setup.msi and setup.exe to test out iBreak.
