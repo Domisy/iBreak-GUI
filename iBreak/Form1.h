@@ -18,12 +18,12 @@ namespace FormsTest {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Summary for Form1
+	/// The GUI for iBreak, the jailbreak toolkit for all iOS devices.
 	/// </summary>
-	//char headerText[20];
+	
 
 	int progress(0);
-	
+	//int tool(0);
 	
 
 	public ref class Form1 : public System::Windows::Forms::Form
@@ -38,12 +38,70 @@ namespace FormsTest {
 			
 		}
 
+	// Turns next button off every time panel is advanced.
 	public:
 		int nextActivateFunc(bool nextActivate) {
 		nextButton->Enabled = nextActivate;
 		return 0;
 		}
+
 	
+		//Determines which tool to select for the user.
+	public:
+		/**
+		Integer values to jailbreak tools:
+		1 - greenp0ison
+		2 - redsnow3b
+		3 - redsnow4b
+		4 - snowbreeze
+		**/
+		int jbTool() {
+			int tool;
+
+			if (prompt1choice1->Checked == true) {
+				if (prompt2choice1->Checked == true) { int tool = 1; }
+		
+				else if (prompt2choice2->Checked == true) {
+					if (unlockedDropdown->Enabled == true) { int tool = 2; } } // find out if yes or no is selected
+
+				else if (prompt2choice3->Checked == true) {
+					if (unlockedDropdown->Enabled == true) { int tool = 3; } } // find out if yes or no is selected
+			}
+
+			else if (prompt1choice2->Checked == true) {
+				if (prompt2choice1->Checked == true) { int tool = 1; }
+				else if (prompt2choice2->Checked == true) { int tool = 2; }
+				else if (prompt2choice3->Checked == true) { int tool = 3; } 
+			}
+
+			else if (prompt1choice3->Checked == true) {
+				if (prompt2choice1->Checked == true) { int tool = 1; }
+				else if (prompt2choice2->Checked == true) { int tool = 2; }
+				else if (prompt2choice3->Checked == true) { int tool = 3; } 
+			}
+
+
+			switch(tool) {
+				case 1:
+					//greenpoison
+					break;
+				case 2:
+					//redsnow v1
+					break;
+				case 3:
+					//redsnow v2
+					break;
+				case 4:
+					//snowbreeze
+					break;
+				default:
+					//something here...
+					break;
+			}
+		return 0;
+		}
+
+
 
 	protected:
 		/// <summary>
@@ -69,9 +127,13 @@ namespace FormsTest {
 	private: System::Windows::Forms::GroupBox^  prompt3;
 	private: System::Windows::Forms::ComboBox^  unlockedDropdown;
 	private: System::Windows::Forms::GroupBox^  prompt2;
-	private: System::Windows::Forms::RadioButton^  radioButton4;
-	private: System::Windows::Forms::RadioButton^  prompt2choice2;
 	private: System::Windows::Forms::RadioButton^  prompt2choice1;
+
+	private: System::Windows::Forms::RadioButton^  prompt2choice3;
+	private: System::Windows::Forms::RadioButton^  prompt2choice2;
+
+
+
 	private: System::Windows::Forms::GroupBox^  prompt1;
 	private: System::Windows::Forms::RadioButton^  prompt1choice1;
 	private: System::Windows::Forms::RadioButton^  prompt1choice2;
@@ -244,9 +306,9 @@ private: System::ComponentModel::IContainer^  components;
 			this->prompt3 = (gcnew System::Windows::Forms::GroupBox());
 			this->unlockedDropdown = (gcnew System::Windows::Forms::ComboBox());
 			this->prompt2 = (gcnew System::Windows::Forms::GroupBox());
-			this->radioButton4 = (gcnew System::Windows::Forms::RadioButton());
-			this->prompt2choice2 = (gcnew System::Windows::Forms::RadioButton());
 			this->prompt2choice1 = (gcnew System::Windows::Forms::RadioButton());
+			this->prompt2choice3 = (gcnew System::Windows::Forms::RadioButton());
+			this->prompt2choice2 = (gcnew System::Windows::Forms::RadioButton());
 			this->prompt1 = (gcnew System::Windows::Forms::GroupBox());
 			this->prompt1choice1 = (gcnew System::Windows::Forms::RadioButton());
 			this->prompt1choice2 = (gcnew System::Windows::Forms::RadioButton());
@@ -256,6 +318,7 @@ private: System::ComponentModel::IContainer^  components;
 			this->welcomeText = (gcnew System::Windows::Forms::RichTextBox());
 			this->panelStep2 = (gcnew System::Windows::Forms::Panel());
 			this->panelStep3 = (gcnew System::Windows::Forms::Panel());
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->findingJb = (gcnew System::Windows::Forms::ProgressBar());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
@@ -286,7 +349,6 @@ private: System::ComponentModel::IContainer^  components;
 			this->splitContainer1 = (gcnew System::Windows::Forms::SplitContainer());
 			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape1 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
-			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->panelWelcome->SuspendLayout();
 			this->panelStep1->SuspendLayout();
 			this->panel3->SuspendLayout();
@@ -409,9 +471,9 @@ private: System::ComponentModel::IContainer^  components;
 			// 
 			// prompt2
 			// 
-			this->prompt2->Controls->Add(this->radioButton4);
-			this->prompt2->Controls->Add(this->prompt2choice2);
 			this->prompt2->Controls->Add(this->prompt2choice1);
+			this->prompt2->Controls->Add(this->prompt2choice3);
+			this->prompt2->Controls->Add(this->prompt2choice2);
 			this->prompt2->Location = System::Drawing::Point(9, 103);
 			this->prompt2->Name = L"prompt2";
 			this->prompt2->Size = System::Drawing::Size(243, 93);
@@ -421,40 +483,40 @@ private: System::ComponentModel::IContainer^  components;
 			this->prompt2->Visible = false;
 			this->prompt2->Enter += gcnew System::EventHandler(this, &Form1::prompt2_Enter);
 			// 
-			// radioButton4
+			// prompt2choice1
 			// 
-			this->radioButton4->AutoSize = true;
-			this->radioButton4->Location = System::Drawing::Point(6, 19);
-			this->radioButton4->Name = L"radioButton4";
-			this->radioButton4->Size = System::Drawing::Size(69, 17);
-			this->radioButton4->TabIndex = 2;
-			this->radioButton4->TabStop = true;
-			this->radioButton4->Text = L"iOS 4.2.1";
-			this->radioButton4->UseVisualStyleBackColor = true;
+			this->prompt2choice1->AutoSize = true;
+			this->prompt2choice1->Location = System::Drawing::Point(6, 19);
+			this->prompt2choice1->Name = L"prompt2choice1";
+			this->prompt2choice1->Size = System::Drawing::Size(69, 17);
+			this->prompt2choice1->TabIndex = 2;
+			this->prompt2choice1->TabStop = true;
+			this->prompt2choice1->Text = L"iOS 4.2.1";
+			this->prompt2choice1->UseVisualStyleBackColor = true;
+			// 
+			// prompt2choice3
+			// 
+			this->prompt2choice3->AutoSize = true;
+			this->prompt2choice3->Location = System::Drawing::Point(6, 65);
+			this->prompt2choice3->Name = L"prompt2choice3";
+			this->prompt2choice3->Size = System::Drawing::Size(60, 17);
+			this->prompt2choice3->TabIndex = 1;
+			this->prompt2choice3->TabStop = true;
+			this->prompt2choice3->Text = L"iOS 5.0";
+			this->prompt2choice3->UseVisualStyleBackColor = true;
+			this->prompt2choice3->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton7_CheckedChanged);
 			// 
 			// prompt2choice2
 			// 
 			this->prompt2choice2->AutoSize = true;
-			this->prompt2choice2->Location = System::Drawing::Point(6, 65);
+			this->prompt2choice2->Location = System::Drawing::Point(6, 42);
 			this->prompt2choice2->Name = L"prompt2choice2";
-			this->prompt2choice2->Size = System::Drawing::Size(60, 17);
-			this->prompt2choice2->TabIndex = 1;
+			this->prompt2choice2->Size = System::Drawing::Size(96, 17);
+			this->prompt2choice2->TabIndex = 0;
 			this->prompt2choice2->TabStop = true;
-			this->prompt2choice2->Text = L"iOS 5.0";
+			this->prompt2choice2->Text = L"iOS 4.3.3-4.3.5";
 			this->prompt2choice2->UseVisualStyleBackColor = true;
-			this->prompt2choice2->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton7_CheckedChanged);
-			// 
-			// prompt2choice1
-			// 
-			this->prompt2choice1->AutoSize = true;
-			this->prompt2choice1->Location = System::Drawing::Point(6, 42);
-			this->prompt2choice1->Name = L"prompt2choice1";
-			this->prompt2choice1->Size = System::Drawing::Size(96, 17);
-			this->prompt2choice1->TabIndex = 0;
-			this->prompt2choice1->TabStop = true;
-			this->prompt2choice1->Text = L"iOS 4.3.3-4.3.5";
-			this->prompt2choice1->UseVisualStyleBackColor = true;
-			this->prompt2choice1->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton4_CheckedChanged);
+			this->prompt2choice2->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton4_CheckedChanged);
 			// 
 			// prompt1
 			// 
@@ -564,6 +626,15 @@ private: System::ComponentModel::IContainer^  components;
 			this->panelStep3->Size = System::Drawing::Size(326, 324);
 			this->panelStep3->TabIndex = 4;
 			this->panelStep3->Visible = false;
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(86, 298);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(152, 13);
+			this->label5->TabIndex = 5;
+			this->label5->Text = L"(this is where it ends for now...)";
 			// 
 			// findingJb
 			// 
@@ -926,15 +997,6 @@ private: System::ComponentModel::IContainer^  components;
 			this->lineShape1->Y1 = 313;
 			this->lineShape1->Y2 = 1;
 			// 
-			// label5
-			// 
-			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(86, 298);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(152, 13);
-			this->label5->TabIndex = 5;
-			this->label5->Text = L"(this is where it ends for now...)";
-			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -997,8 +1059,8 @@ private: System::ComponentModel::IContainer^  components;
 
 				 //advancing the panels
 				 if (check1->Visible == false) { check1->Visible = true; panelStep1->Visible = true; }
-					else if (check2->Visible == false) { check2->Visible = true; panelStep2->Visible = true; }
-					else if (check3->Visible == false) { check3->Visible = true; panelStep3->Visible = true;}
+					else if (check2->Visible == false) { check2->Visible = true; panelStep2->Visible = true; jbTool();}
+					else if (check3->Visible == false) { check3->Visible = true; panelStep3->Visible = true;  }
 					else if (check4->Visible == false) { check4->Visible = true; /*panelStep4->Visible = true; */}
 					else if (check5->Visible == false) { check5->Visible = true; cancelButton->Text = "Finish";}
 			 	}	 
