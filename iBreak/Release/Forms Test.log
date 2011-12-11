@@ -1,4 +1,4 @@
-﻿Build started 12/7/2011 9:43:05 PM.
+﻿Build started 12/10/2011 6:12:19 PM.
      1>Project "C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Touching "Release\iBreak.unsuccessfulbuild".
@@ -6,28 +6,62 @@
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
          All outputs are up-to-date.
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\iBreak.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.VisualBasic.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.VisualBasic.PowerPacks.Vs.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt iBreak.cpp /clr:nostdlib 
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\iBreak.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Users\Theo Mavrakis\Documents\dotNetZip\zip-v1.9\Release\Ionic.Zip.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.VisualBasic.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.VisualBasic.PowerPacks.Vs.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt iBreak.cpp /clr:nostdlib 
          iBreak.cpp
-         All outputs are up-to-date.
-       CoreResGen:
-         "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.VisualBasic.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.VisualBasic.PowerPacks.Vs.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile Form1.resX,Release\FormsTest.Form1.resources
-         Processing resource file "Form1.resX" into "Release\FormsTest.Form1.resources".
-       ResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\app.res" app.rc 
-       Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\Release\iBreak.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\FormsTest.Form1.resources /MANIFEST /ManifestFile:"Release\iBreak.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\Release\iBreak.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
-         Release\AssemblyInfo.obj
-         Release\iBreak.obj
-         Release\stdafx.obj
-         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
-         Forms Test.vcxproj -> C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\Release\iBreak.exe
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\Release\iBreak.exe;#1" /manifest Release\iBreak.exe.intermediate.manifest
-       FinalizeBuildStatus:
-         Deleting file "Release\iBreak.unsuccessfulbuild".
-         Touching "Release\iBreak.lastbuildstate".
-     1>Done Building Project "C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj" (build target(s)).
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(59): error C2958: the left parenthesis '(' found at 'c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\form1.h(55)' was not matched correctly
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(55): error C2059: syntax error : '('
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(55): error C2143: syntax error : missing ')' before '{'
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(55): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(56): error C3861: 'Zipfile': identifier not found
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(57): error C2182: 'ExtractAll' : illegal use of type 'void'
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(57): error C2440: 'initializing' : cannot convert from 'const char [23]' to 'int'
+                 There is no context in which this conversion is possible
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(81): error C2059: syntax error : 'public'
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(92): error C2065: 'prompt1choice1' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(92): error C2227: left of '->Checked' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(93): error C2065: 'prompt2choice1' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(93): error C2227: left of '->Checked' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(95): error C2065: 'prompt2choice2' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(95): error C2227: left of '->Checked' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(96): error C2065: 'unlockedDropdown' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(96): error C2227: left of '->Enabled' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(98): error C2065: 'prompt2choice3' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(98): error C2227: left of '->Checked' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(99): error C2065: 'unlockedDropdown' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(99): error C2227: left of '->Enabled' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(102): error C2065: 'prompt1choice2' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(102): error C2227: left of '->Checked' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(103): error C2065: 'prompt2choice1' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(103): error C2227: left of '->Checked' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(104): error C2065: 'prompt2choice2' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(104): error C2227: left of '->Checked' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(105): error C2065: 'prompt2choice3' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(105): error C2227: left of '->Checked' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(108): error C2065: 'prompt1choice3' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(108): error C2227: left of '->Checked' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(109): error C2065: 'prompt2choice1' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(109): error C2227: left of '->Checked' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(110): error C2065: 'prompt2choice2' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(110): error C2227: left of '->Checked' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(111): error C2065: 'prompt2choice3' : undeclared identifier
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(111): error C2227: left of '->Checked' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\theo mavrakis\documents\visual studio 2010\projects\ibreak\ibreak\Form1.h(438): fatal error C1903: unable to recover from previous error(s); stopping compilation
+     1>Done Building Project "C:\Users\Theo Mavrakis\Documents\Visual Studio 2010\Projects\iBreak\iBreak\Forms Test.vcxproj" (build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.96
+Time Elapsed 00:00:00.29

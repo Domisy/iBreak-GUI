@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include <string>
+
 namespace FormsTest {
 
 	using namespace System;
@@ -16,6 +18,8 @@ namespace FormsTest {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace Ionic::Zip;
+
 
 	/// <summary>
 	/// The GUI for iBreak, the jailbreak toolkit for all iOS devices.
@@ -23,8 +27,9 @@ namespace FormsTest {
 	
 
 	int progress(0);
-	//int tool(0);
+	int tool(0);
 	
+
 
 	public ref class Form1 : public System::Windows::Forms::Form
 	{
@@ -45,7 +50,30 @@ namespace FormsTest {
 		return 0;
 		}
 
-	
+
+	// Unzip proper jailbreak tool from AppData folder on user's computer.   ***PREP FOR VARIABLE LINKED TO jbTool()***
+	public:
+		int unzip() {
+		
+		System::String^ appdataPath = Environment::GetEnvironmentVariable("APPDATA");
+		System::String^ zipPath = appdataPath + "\\iBreak\\greenpois0n.zip";
+		System::String^ pPath = appdataPath + "\\iBreak";
+
+		ZipFile ^ zip;
+
+		try {
+			zip = gcnew ZipFile(zipPath);
+			zip->ExtractAll(pPath, ExtractExistingFileAction::OverwriteSilently);
+		}
+		finally
+		{
+			delete zip;	
+		}
+		return 0;
+		}	
+
+
+
 		//Determines which tool to select for the user.
 	public:
 		/**
@@ -176,98 +204,7 @@ namespace FormsTest {
 	private: System::Windows::Forms::Label^  label5;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	private: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1006,6 +943,8 @@ private: System::ComponentModel::IContainer^  components;
 			this->Controls->Add(this->splitContainer1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
 			this->MaximizeBox = false;
+			this->MaximumSize = System::Drawing::Size(500, 400);
+			this->MinimumSize = System::Drawing::Size(500, 400);
 			this->Name = L"Form1";
 			this->Text = L"iBreak";
 			this->panelWelcome->ResumeLayout(false);
@@ -1059,7 +998,7 @@ private: System::ComponentModel::IContainer^  components;
 
 				 //advancing the panels
 				 if (check1->Visible == false) { check1->Visible = true; panelStep1->Visible = true; }
-					else if (check2->Visible == false) { check2->Visible = true; panelStep2->Visible = true; jbTool();}
+					else if (check2->Visible == false) { check2->Visible = true; panelStep2->Visible = true; jbTool(); unzip();}
 					else if (check3->Visible == false) { check3->Visible = true; panelStep3->Visible = true;  }
 					else if (check4->Visible == false) { check4->Visible = true; /*panelStep4->Visible = true; */}
 					else if (check5->Visible == false) { check5->Visible = true; cancelButton->Text = "Finish";}
@@ -1126,4 +1065,3 @@ private: System::Void timer1_Tick(System::Object^  sender, System::EventArgs^  e
 		 }
 };
 }
-
