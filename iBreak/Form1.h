@@ -7,8 +7,8 @@
 
 
 #pragma once
-
 #include <string>
+
 
 namespace FormsTest {
 
@@ -19,16 +19,21 @@ namespace FormsTest {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace Ionic::Zip;
-
+	using namespace System :: Diagnostics;
 
 	/// <summary>
 	/// The GUI for iBreak, the jailbreak toolkit for all iOS devices.
 	/// </summary>
-	
 
-	int progress(0);
-	int tool(0);
+
+
 	
+/////////////////GLOBAL VARIABLES////////////////////////////////
+	int progress(0);
+	int exePathSwitch(0);
+		
+////////////////////////////////////////////////////////////////
+
 
 
 	public ref class Form1 : public System::Windows::Forms::Form
@@ -43,7 +48,13 @@ namespace FormsTest {
 			
 		}
 
-	// Turns next button off every time panel is advanced.
+
+
+//////////////////////////////////////////////////////BEGIN CUSTOM FUNCTIONS/////////////////////////////////////////////////////////////////////////
+
+
+
+		// Turns next button off every time panel is advanced.
 	public:
 		int nextActivateFunc(bool nextActivate) {
 		nextButton->Enabled = nextActivate;
@@ -51,14 +62,96 @@ namespace FormsTest {
 		}
 
 
-	// Unzip proper jailbreak tool from AppData folder on user's computer.   ***PREP FOR VARIABLE LINKED TO jbTool()***
+		//Clears all the selections when user goes back to welcome screen.
 	public:
-		int unzip() {
+		void clearEntries() {
+			prompt1choice1->Checked = false;
+			prompt1choice2->Checked = false;
+			prompt1choice3->Checked = false;
+			prompt2choice1->Checked = false;
+			prompt2choice2->Checked = false;
+			prompt2choice3->Checked = false;
+			prompt3->Visible = false;
+			}
 		
-		System::String^ appdataPath = Environment::GetEnvironmentVariable("APPDATA");
-		System::String^ zipPath = appdataPath + "\\iBreak\\greenpois0n.zip";
-		System::String^ pPath = appdataPath + "\\iBreak";
 
+		
+		//Determines which tool to select for the user.
+	public:
+		
+		int jbTool() {
+
+			
+			if (prompt1choice1->Checked == true) {
+				if (prompt2choice1->Checked == true) { tool(1); }
+		
+				else if (prompt2choice2->Checked == true) {
+					if (unlockedDropdown->Enabled == true) { tool(2); } } // find out if yes or no is selected
+
+				else if (prompt2choice3->Checked == true) {
+					if (unlockedDropdown->Enabled == true) { tool(3); } } // find out if yes or no is selected
+			}
+
+			else if (prompt1choice2->Checked == true) {
+				if (prompt2choice1->Checked == true) { tool(1); }
+				else if (prompt2choice2->Checked == true) { tool(2); }
+				else if (prompt2choice3->Checked == true) { tool(3); } 
+			}
+
+			else if (prompt1choice3->Checked == true) {
+				if (prompt2choice1->Checked == true) { tool(1); }
+				else if (prompt2choice2->Checked == true) { tool(2); }
+				else if (prompt2choice3->Checked == true) { tool(3); } 
+			}
+			return 0;
+			}
+
+
+
+
+		//Here is where using the info obtained above, the switch statement sends the correct tool path to be extracted.
+	public:
+		int tool(int jbTool) {
+
+			switch(jbTool) {
+				case 1:
+					tetheringText2->Visible = true;
+					//////////////////////toolPath = "\\iBreak\\greenpois0n.zip";
+					unzip("\\iBreak\\greenpois0n.zip");
+					exePathSwitch = 1;
+					break;
+				case 2:
+					//tetheringText2->Visible = true;
+					unzip("\\iBreak\\redsn0w_1.zip");
+					exePathSwitch = 2;
+					break;
+				case 3:
+					unzip("\\iBreak\\redsn0w_2.zip");
+					exePathSwitch = 3;
+					break;
+				case 4:
+					//snowbreeze
+					break;
+				default:
+					//something here..
+					break;
+			}
+		return 0;
+		}
+
+
+
+
+		// Unzip proper jailbreak tool from AppData folder on user's computer.  
+	public:
+		void unzip(const System::String^ toolPath) {
+		
+
+		System::String^ appdataPath = Environment::GetEnvironmentVariable("APPDATA");
+		System::String^ zipPath = appdataPath + toolPath;
+		System::String^ pPath = appdataPath + "\\iBreak";
+		
+		
 		ZipFile ^ zip;
 
 		try {
@@ -69,65 +162,50 @@ namespace FormsTest {
 		{
 			delete zip;	
 		}
-		return 0;
+		//return 0;
 		}	
 
 
 
-		//Determines which tool to select for the user.
+
+		//Function called to execute the tool selected by the user. 
 	public:
-		/**
-		Integer values to jailbreak tools:
-		1 - greenp0ison
-		2 - redsnow3b
-		3 - redsnow4b
-		4 - snowbreeze
-		**/
-		int jbTool() {
-			int tool;
+		void executeTool() {
+			System::String^ appdataPath = Environment::GetEnvironmentVariable("APPDATA");
+			System::String^ greenpExePath = appdataPath + "\\iBreak\\greenpois0n.exe";
+			System::String^ redsn0w_1ExePath = appdataPath + "\\iBreak\\redsn0w_1.exe";
+			System::String^ redsn0w_2ExePath = appdataPath + "\\iBreak\\redsn0w_2.exe";
+			System::String^ ExePath;
 
-			if (prompt1choice1->Checked == true) {
-				if (prompt2choice1->Checked == true) { int tool = 1; }
-		
-				else if (prompt2choice2->Checked == true) {
-					if (unlockedDropdown->Enabled == true) { int tool = 2; } } // find out if yes or no is selected
-
-				else if (prompt2choice3->Checked == true) {
-					if (unlockedDropdown->Enabled == true) { int tool = 3; } } // find out if yes or no is selected
-			}
-
-			else if (prompt1choice2->Checked == true) {
-				if (prompt2choice1->Checked == true) { int tool = 1; }
-				else if (prompt2choice2->Checked == true) { int tool = 2; }
-				else if (prompt2choice3->Checked == true) { int tool = 3; } 
-			}
-
-			else if (prompt1choice3->Checked == true) {
-				if (prompt2choice1->Checked == true) { int tool = 1; }
-				else if (prompt2choice2->Checked == true) { int tool = 2; }
-				else if (prompt2choice3->Checked == true) { int tool = 3; } 
-			}
-
-
-			switch(tool) {
+			switch(exePathSwitch) {
 				case 1:
-					//greenpoison
+					ExePath = greenpExePath;
 					break;
 				case 2:
-					//redsnow v1
+					ExePath = redsn0w_1ExePath;
 					break;
 				case 3:
-					//redsnow v2
+					ExePath = redsn0w_2ExePath;
 					break;
 				case 4:
-					//snowbreeze
+					//snowbreeze thing
 					break;
 				default:
-					//something here...
 					break;
 			}
-		return 0;
-		}
+					ProcessStartInfo ^psi = gcnew ProcessStartInfo(ExePath);
+					Process ^pcs = Process:: Start(psi);
+
+			/** Code to convert System::String^ to const char, using namespace System::Runtime::InteropServices;
+	IntPtr p = Marshal::StringToHGlobalAnsi(greenpExePath); 
+	const char* greenpExePathStr = static_cast<char*>(p.ToPointer()); 
+	Marshal::FreeHGlobal(p); 
+**/
+			}
+			
+		
+
+///////////////////////////////////////////////////////////////END OF CUSTOM FUNCTIONS///////////////////////////////////////////////////////////////
 
 
 
@@ -576,7 +654,7 @@ private: System::ComponentModel::IContainer^  components;
 			// findingJb
 			// 
 			this->findingJb->BackColor = System::Drawing::SystemColors::Control;
-			this->findingJb->Location = System::Drawing::Point(65, 250);
+			this->findingJb->Location = System::Drawing::Point(65, 206);
 			this->findingJb->MarqueeAnimationSpeed = 10;
 			this->findingJb->Name = L"findingJb";
 			this->findingJb->Size = System::Drawing::Size(192, 38);
@@ -593,7 +671,7 @@ private: System::ComponentModel::IContainer^  components;
 			this->label4->Size = System::Drawing::Size(285, 95);
 			this->label4->TabIndex = 3;
 			this->label4->Text = L"iBreak is now determining the correct jailbreak tool for your specified device.\r\n" 
-				L"It will then extract it to your desktop.\r\n\r\nPlease wait a moment...";
+				L"It will then extract it for you to launch.\r\n\r\nPlease wait a moment...";
 			// 
 			// button1
 			// 
@@ -693,6 +771,7 @@ private: System::ComponentModel::IContainer^  components;
 			this->tetheringText2->TabIndex = 3;
 			this->tetheringText2->Text = L"Luckily for you, there is an untethered jailbreak available for your device.\r\nYou" 
 				L" will NOT need to connect your device to your computer to boot it.";
+			this->tetheringText2->Visible = false;
 			// 
 			// tetheringText1
 			// 
@@ -911,7 +990,6 @@ private: System::ComponentModel::IContainer^  components;
 			this->splitContainer1->Panel2->Controls->Add(this->nextButton);
 			this->splitContainer1->Panel2->Controls->Add(this->backButton);
 			this->splitContainer1->Panel2->Controls->Add(this->shapeContainer2);
-			this->splitContainer1->Panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Form1::splitContainer1_Panel2_Paint);
 			this->splitContainer1->Size = System::Drawing::Size(485, 359);
 			this->splitContainer1->SplitterDistance = 149;
 			this->splitContainer1->TabIndex = 3;
@@ -998,8 +1076,8 @@ private: System::ComponentModel::IContainer^  components;
 
 				 //advancing the panels
 				 if (check1->Visible == false) { check1->Visible = true; panelStep1->Visible = true; }
-					else if (check2->Visible == false) { check2->Visible = true; panelStep2->Visible = true; jbTool(); unzip();}
-					else if (check3->Visible == false) { check3->Visible = true; panelStep3->Visible = true;  }
+					else if (check2->Visible == false) { check2->Visible = true; panelStep2->Visible = true; jbTool(); }
+					else if (check3->Visible == false) { check3->Visible = true; panelStep3->Visible = true; }
 					else if (check4->Visible == false) { check4->Visible = true; /*panelStep4->Visible = true; */}
 					else if (check5->Visible == false) { check5->Visible = true; cancelButton->Text = "Finish";}
 			 	}	 
@@ -1014,8 +1092,8 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 				if (check5->Visible == true) { check5->Visible = false; }
 					else if (check4->Visible == true) { check4->Visible = false; }
 					else if (check3->Visible == true) { check3->Visible = false; panelStep3->Visible = false; }
-					else if (check2->Visible == true) { check2->Visible = false; panelStep2->Visible = false; }
-					else if (check1->Visible == true) { check1->Visible = false; panelStep1->Visible = false; }
+					else if (check2->Visible == true) { check2->Visible = false; panelStep2->Visible = false; understandingCheck->Checked = false; nextActivateFunc(true);}
+					else if (check1->Visible == true) { check1->Visible = false; panelStep1->Visible = false; clearEntries(); nextActivateFunc(true); }
 		 }
 
 
@@ -1056,12 +1134,10 @@ private: System::Void understandingCheck_CheckedChanged(System::Object^  sender,
 				 
 		 }
 
-private: System::Void splitContainer1_Panel2_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
-		 }
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-			 nextActivateFunc(true);
-		 }
-private: System::Void timer1_Tick(System::Object^  sender, System::EventArgs^  e) {
+			nextActivateFunc(true);
+		    executeTool();
+			
 		 }
 };
 }
