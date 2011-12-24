@@ -15,14 +15,20 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_21F105A334E547869DE93D36E426CD34"
+        "MsmKey" = "8:_42874632E456425AB484778A83F1DD40"
         "OwnerKey" = "8:_8CF091BFDC854403BC1857CB8D664926"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_42874632E456425AB484778A83F1DD40"
-        "OwnerKey" = "8:_8CF091BFDC854403BC1857CB8D664926"
+        "MsmKey" = "8:_4F61CBFC11AB466CB7C3AF4966F9E392"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5037A6819E704A84BA4472405A424E29"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -45,6 +51,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_EA849548DF2D4412B36AC874A0F5F25E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_8CF091BFDC854403BC1857CB8D664926"
         "MsmSig" = "8:_UNDEFINED"
@@ -52,13 +64,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C18FEA41811D0A455F572437F506FE18"
+        "OwnerKey" = "8:_42874632E456425AB484778A83F1DD40"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_42874632E456425AB484778A83F1DD40"
+        "OwnerKey" = "8:_C18FEA41811D0A455F572437F506FE18"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -173,11 +185,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_42874632E456425AB484778A83F1DD40"
-                    {
-                    "Name" = "8:Microsoft.VisualBasic.PowerPacks.Vs.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.VisualBasic.PowerPacks.Vs.dll"
             "TargetName" = "8:"
@@ -197,12 +204,52 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4F61CBFC11AB466CB7C3AF4966F9E392"
+            {
+            "SourcePath" = "8:..\\iBreak\\resources\\sn0wbreeze.zip"
+            "TargetName" = "8:sn0wbreeze.zip"
+            "Tag" = "8:"
+            "Folder" = "8:_5F65DEC0896C4AEEBF0AC9CF679AC766"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5037A6819E704A84BA4472405A424E29"
+            {
+            "SourcePath" = "8:..\\iBreak\\resources\\redsn0w_beta.zip"
+            "TargetName" = "8:redsn0w_beta.zip"
+            "Tag" = "8:"
+            "Folder" = "8:_5F65DEC0896C4AEEBF0AC9CF679AC766"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9FE68DC7E4454B599BD92BE64960CA1D"
             {
             "SourcePath" = "8:..\\iBreak\\resources\\greenpois0n.zip"
             "TargetName" = "8:greenpois0n.zip"
             "Tag" = "8:"
-            "Folder" = "8:_7C3B4244825C4CB3BAC7A97DE65D91EE"
+            "Folder" = "8:_5F65DEC0896C4AEEBF0AC9CF679AC766"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -224,16 +271,31 @@
             "AssemblyAsmDisplayName" = "8:Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_C18FEA41811D0A455F572437F506FE18"
-                    {
-                    "Name" = "8:Ionic.Zip.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Ionic.Zip.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_7C3B4244825C4CB3BAC7A97DE65D91EE"
+            "Folder" = "8:_A24F5A21A0F54C949827305AA86149C2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:TRUE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EA849548DF2D4412B36AC874A0F5F25E"
+            {
+            "SourcePath" = "8:..\\iBreak\\resources\\redsn0w.zip"
+            "TargetName" = "8:redsn0w.zip"
+            "Tag" = "8:"
+            "Folder" = "8:_5F65DEC0896C4AEEBF0AC9CF679AC766"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -245,7 +307,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -284,6 +346,17 @@
                     "Property" = "8:_A5AB3B7EF86C42228A3FC66AE06077A5"
                         "Folders"
                         {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_5F65DEC0896C4AEEBF0AC9CF679AC766"
+                            {
+                            "Name" = "8:resources"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_9330CD8C98114C708DA96CC3C41B5906"
+                                "Folders"
+                                {
+                                }
+                            }
                         }
                     }
                 }
@@ -316,7 +389,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:iBreak"
         "ProductCode" = "8:{89F86E53-F8F0-42FD-A36B-3DA22C35E17F}"
-        "PackageCode" = "8:{BEE77319-B6D9-43E6-B4E9-877B0F0BFCA8}"
+        "PackageCode" = "8:{B6843063-9E39-4FA5-8D7E-DCA4046E8D8B}"
         "UpgradeCode" = "8:{B6959A15-E30F-4A9E-ABDA-85A5671AB911}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -538,7 +611,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:Thank you for downloading iBreak by Domisy. This setup application will ensure that you have the proper files needed to run iBreak, before placing it on your desktop. This is NOT an installer."
+                            "Value" = "8:Thank you for downloading iBreak by Domisy. This setup application will ensure that you have the proper resources needed to run iBreak, before placing it on your desktop."
                             "DefaultValue" = "8:#1203"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -639,7 +712,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:Thank you for downloading iBreak by Domisy. This setup application will ensure that you have the proper files needed to run iBreak, before placing it on your desktop. This is NOT an installer."
+                            "Value" = "8:Thank you for downloading iBreak by Domisy. This setup application will ensure that you have the proper resources needed to run iBreak, before placing it on your desktop."
                             "DefaultValue" = "8:#1203"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -683,7 +756,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:Thanks for setting up iBreak. It is now waiting for you on your desktop!"
+                            "Value" = "8:Thanks for choosing and setting up iBreak. It is now waiting for you on your desktop!"
                             "DefaultValue" = "8:#1258"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -731,20 +804,6 @@
         }
         "MergeModule"
         {
-            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_21F105A334E547869DE93D36E426CD34"
-            {
-            "UseDynamicProperties" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "SourcePath" = "8:Microsoft_VC100_DebugCRT_x86.msm"
-                "Properties"
-                {
-                }
-            "LanguageId" = "3:0"
-            "Exclude" = "11:FALSE"
-            "Folder" = "8:"
-            "Feature" = "8:"
-            "IsolateTo" = "8:"
-            }
         }
         "ProjectOutput"
         {
